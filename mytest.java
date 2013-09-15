@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
 public class mytest extends TestCase {
 
@@ -36,5 +37,9 @@ public class mytest extends TestCase {
 
         p = new Person("Tanner", null);
         assertEquals("Tanner ?", p.getFullName());
+    }
+
+    public static void main(String[] args) {
+        junit.textui.TestRunner.run(new TestSuite(mytest.class));
     }
 }

@@ -8,6 +8,7 @@ package KTPM2013;
  *
  * @author autorunx
  */
+
 public class test {
     public static int gpt(int a, int b){
         if(a==0&&b==0){
