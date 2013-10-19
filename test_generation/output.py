@@ -60,9 +60,9 @@ def getInputContent():
 class TestSequense(unittest.TestCase):
     pass
 
-def test_generator(a):
+def test_generator(a,b):
     def test(self):
-        self.assertEqual(a,a)
+        self.assertEqual(a,b)
     return test
 
 '''Main function:'''
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         for t in a:
             i=i+1
             test_name = 'test_%s'% i
-            test = test_generator(input.main(*t))
+            test = test_generator(input.main(*t),input.main(*t))
             setattr(TestSequense, test_name, test)
 
         unittest.main()
